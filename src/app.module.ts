@@ -15,11 +15,12 @@ import { AuthModule } from './auth/auth.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
+      host: 'ec2-18-215-44-132.compute-1.amazonaws.com',
       port: 5432,
-      username: 'max16',
-      password: 'test',
-      database: 'nuber-eats-challenge',
+      username: 'zppypshvmidhqb',
+      password:
+        '0f0e432ace1613bf389ccdadb5a7080c0f61808b752dbfd139cd7f3b6047fc15',
+      database: 'da2q8g0kfr1ad6',
       synchronize: true,
       logging: process.env.NODE_ENV !== 'test',
       entities: [Podcast, Episode, User, Review],
